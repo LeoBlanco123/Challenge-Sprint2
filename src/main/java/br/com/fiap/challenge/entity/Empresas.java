@@ -34,7 +34,7 @@ public class Empresas {
     private String localizacaoGeografica;
 
     @Column(name = "Numero_Funcionarios")
-    private int numeroFuncionarios;
+    private Long numeroFuncionarios;
 
     @Column(name = "Tipo_Empresa")
     private String tipoEmpresa;
