@@ -6,9 +6,9 @@ import jakarta.validation.constraints.NotNull;
 public record ComportamentoNegociosRequest(
 
         @NotNull(message = "A interações é obrigatório")
-        int interacoesPlataforma,
+        Long interacoesPlataforma,
         @NotNull(message = "A frequencia é obrigatória")
-        int frequenciaUso,
+        Long frequenciaUso,
         String feedback,
         @NotNull(message = "O recursos é obrigatório")
         String usoRecursosEspecificos,

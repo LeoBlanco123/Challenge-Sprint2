@@ -5,13 +5,13 @@ import lombok.Builder;
 @Builder
 public record EmpresasResponse(
 
-        Long id_Empresa,
+        Long id,
         String nome,
         String tamanho,
         String setor,
         String localizacaoGeografica,
-        int numeroFuncionarios,
+        Long numeroFuncionarios,
         String tipoEmpresa,
-        boolean cliente
+        Boolean cliente
 ) {
 }

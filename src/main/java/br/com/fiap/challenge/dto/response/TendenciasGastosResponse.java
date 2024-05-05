@@ -5,10 +5,10 @@ import lombok.Builder;
 @Builder
 public record TendenciasGastosResponse(
 
-        Long id_TendenciaGasto,
-        int ano,
-        double gastoMarketing,
-        double gastoAutomacao,
+        Long id,
+        Long ano,
+        Double gastoMarketing,
+        Double gastoAutomacao,
         EmpresasResponse empresa
 ) {
 }

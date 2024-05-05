@@ -47,6 +47,7 @@ public class CadastradosService implements ServiceDTO<Cadastrados, CadastradosRe
     @Override
     public CadastradosResponse toResponse(Cadastrados e) {
         return CadastradosResponse.builder()
+                .id(e.getId())
                 .cnpj(e.getCnpj())
                 .nome(e.getNome())
                 .build();

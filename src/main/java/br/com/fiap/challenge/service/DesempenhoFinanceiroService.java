@@ -58,7 +58,7 @@ public class DesempenhoFinanceiroService implements ServiceDTO<DesempenhoFinance
         var empresa = empresasService.toResponse(e.getEmpresa());
 
         return DesempenhoFinanceiroResponse.builder()
-                .id_Desempenho(e.getId_Desempenho())
+                .id(e.getId())
                 .receita(e.getReceita())
                 .lucro(e.getLucro())
                 .crescimento(e.getCrescimento())

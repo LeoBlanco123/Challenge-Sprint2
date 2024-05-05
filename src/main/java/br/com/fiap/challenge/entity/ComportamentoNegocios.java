@@ -19,13 +19,13 @@ public class ComportamentoNegocios {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SQ_COMPORTAMENTO_NEGOCIOS")
     @SequenceGenerator(name = "SQ_COMPORTAMENTO_NEGOCIOS", sequenceName = "SQ_COMPORTAMENTO_NEGOCIOS", allocationSize = 1)
     @Column(name = "Id_Comportamento")
-    private Long id_Comportamento;
+    private Long id;
 
     @Column(name = "Interacoes_Plataforma")
-    private int interacoesPlataforma;
+    private Long interacoesPlataforma;
 
     @Column(name = "FrequenciaUso")
-    private int frequenciaUso;
+    private Long frequenciaUso;
 
     @Column(name = "Feedback")
     private String feedback;

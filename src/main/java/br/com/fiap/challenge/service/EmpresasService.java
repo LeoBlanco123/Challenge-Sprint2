@@ -53,7 +53,7 @@ public class EmpresasService implements ServiceDTO<Empresas, EmpresasRequest, Em
     @Override
     public EmpresasResponse toResponse(Empresas e) {
         return EmpresasResponse.builder()
-                .id_Empresa(e.getId_Empresa())
+                .id(e.getId())
                 .nome(e.getNome())
                 .tamanho(e.getTamanho())
                 .setor(e.getSetor())

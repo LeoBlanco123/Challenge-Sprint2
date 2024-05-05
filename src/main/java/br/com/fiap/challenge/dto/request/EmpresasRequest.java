@@ -13,10 +13,10 @@ public record EmpresasRequest(
         @NotNull(message = "A localização é obrigatória")
         String localizacaoGeografica,
         @NotNull(message = "O numero de funcionario é obrigatório")
-        int numeroFuncionarios,
+        Long numeroFuncionarios,
         @NotNull(message = "O tipo da emopresa é obrigatório")
         String tipoEmpresa,
         @NotNull(message = "O campo cliente é obrigatório (true or false)")
-        boolean cliente
+        Boolean cliente
 ) {
 }

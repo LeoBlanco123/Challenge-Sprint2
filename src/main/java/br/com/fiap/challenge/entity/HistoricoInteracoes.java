@@ -19,7 +19,7 @@ public class HistoricoInteracoes {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SQ_HISTORICO_INTERACOES")
     @SequenceGenerator(name = "SQ_HISTORICO_INTERACOES", sequenceName = "SQ_HISTORICO_INTERACOES", allocationSize = 1)
     @Column(name = "Id_Interacao")
-    private Long id_Interacao;
+    private Long id;
 
     @Column(name = "Proposta_Negocio")
     private String propostaNegocio;

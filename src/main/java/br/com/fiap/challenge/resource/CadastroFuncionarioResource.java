@@ -30,10 +30,10 @@ public class CadastroFuncionarioResource implements ResourceDTO<CadastroFunciona
     @GetMapping
     public ResponseEntity<Collection<CadastroFuncionarioResponse>> findAll(
             @RequestParam(name = "cargoFuncionario", required = false) String cargoFuncionario,
-            @RequestParam(name = "cadastrados.cnpj", required = false) Long cnpjCadastrados
+            @RequestParam(name = "cadastrados.id", required = false) Long IdCadastrados
     ){
-        var cadastrados = Objects.nonNull( cnpjCadastrados ) ? cadastradosRepository
-                .findById( cnpjCadastrados )
+        var cadastrados = Objects.nonNull( IdCadastrados ) ? cadastradosRepository
+                .findById( IdCadastrados )
                 .orElse( null ) : null;
 
         CadastroFuncionario cadastroFuncionario = CadastroFuncionario.builder()
@@ -79,7 +79,7 @@ public class CadastroFuncionarioResource implements ResourceDTO<CadastroFunciona
         var uri = ServletUriComponentsBuilder
                 .fromCurrentRequestUri()
                 .path( "/{id}" )
-                .buildAndExpand( saved.getCodFuncionario() )
+                .buildAndExpand( saved.getId() )
                 .toUri();
         return ResponseEntity.created( uri ).body( resposta );
     }

@@ -58,7 +58,7 @@ public class TendenciasGastosService implements ServiceDTO<TendenciasGastos, Ten
         var empresa = empresasService.toResponse(e.getEmpresa());
 
         return TendenciasGastosResponse.builder()
-                .id_TendenciaGasto(e.getId_TendenciaGasto())
+                .id(e.getId())
                 .ano(e.getAno())
                 .gastoMarketing(e.getGastoMarketing())
                 .gastoAutomacao(e.getGastoAutomacao())

@@ -42,7 +42,7 @@ public class CadastroFuncionarioService implements ServiceDTO<CadastroFuncionari
     @Override
     public CadastroFuncionario toEntity(CadastroFuncionarioRequest dto) {
 
-        var cadastrados = cadastradosService.findById(dto.cadastrado().cnpj());
+        var cadastrados = cadastradosService.findById(dto.cadastrado().id());
 
         return CadastroFuncionario.builder()
                 .senhaFuncionario(dto.senhaFuncionario())
@@ -57,7 +57,7 @@ public class CadastroFuncionarioService implements ServiceDTO<CadastroFuncionari
         var cadastrados = cadastradosService.toResponse(e.getCadastrado());
 
         return CadastroFuncionarioResponse.builder()
-                .codFuncionario(e.getCodFuncionario())
+                .id(e.getId())
                 .cargoFuncionario(e.getCargoFuncionario())
                 .cadastrado(cadastrados)
                 .build();

@@ -69,7 +69,7 @@ public class CadastradosResource implements ResourceDTO<CadastradosRequest, Cada
         var uri = ServletUriComponentsBuilder
                 .fromCurrentRequestUri()
                 .path( "/{id}" )
-                .buildAndExpand( saved.getCnpj() )
+                .buildAndExpand( saved.getId() )
                 .toUri();
         return ResponseEntity.created( uri ).body( resposta );
     }

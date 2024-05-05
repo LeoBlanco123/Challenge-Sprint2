@@ -1,10 +1,10 @@
 package br.com.fiap.challenge.resource;
 
-import br.com.fiap.challenge.dto.request.EmpresasRequest;
-import br.com.fiap.challenge.dto.response.EmpresasResponse;
-import br.com.fiap.challenge.entity.Cadastrados;
-import br.com.fiap.challenge.entity.Empresas;
-import br.com.fiap.challenge.service.EmpresasService;
+import br.com.fiap.challenge.dto.request.DesempenhoFinanceiroRequest;
+import br.com.fiap.challenge.dto.response.DesempenhoFinanceiroResponse;
+import br.com.fiap.challenge.entity.DesempenhoFinanceiro;
+import br.com.fiap.challenge.repository.EmpresasRepository;
+import br.com.fiap.challenge.service.DesempenhoFinanceiroService;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,40 +15,41 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.util.Collection;
+import java.util.Objects;
 
 @RestController
-@RequestMapping(value = "/empresas")
-public class EmpresasResource implements ResourceDTO<EmpresasRequest, EmpresasResponse>{
+@RequestMapping(value = "/desempenho")
+public class DesempenhoFinanceiroResource implements ResourceDTO<DesempenhoFinanceiroRequest, DesempenhoFinanceiroResponse>{
 
     @Autowired
-    private EmpresasService service;
+    private DesempenhoFinanceiroService service;
+
+    @Autowired
+    private EmpresasRepository empresasRepository;
 
     @GetMapping
-    public ResponseEntity<Collection<EmpresasResponse>> findAll(
-            @RequestParam(name = "Nome", required = false) String nome,
-            @RequestParam(name = "Tamanho", required = false) String tamaho,
-            @RequestParam(name = "Setor", required = false) String setor,
-            @RequestParam(name = "Localizacao_Geografica", required = false) String localizacaoGeografica,
-            @RequestParam(name = "Numero_Funcionarios", required = false) Long numeroFuncionarios,
-            @RequestParam(name = "Tipo_Empresa", required = false) String tipoEmpresa,
-            @RequestParam(name = "Cliente", required = false) Boolean cliente
+    public ResponseEntity<Collection<DesempenhoFinanceiroResponse>> findAll(
+            @RequestParam(name = "receita", required = false) Double receita,
+            @RequestParam(name = "lucro", required = false) Double lucro,
+            @RequestParam(name = "crecimento", required = false) Double crecimento,
+            @RequestParam(name = "empresas.id", required = false) Long idEmpresas
     ){
+        var empresas = Objects.nonNull( idEmpresas ) ? empresasRepository
+                .findById( idEmpresas )
+                .orElse( null ) : null;
 
-        var empresas = Empresas.builder()
-                .nome(nome)
-                .tamanho(tamaho)
-                .setor(setor)
-                .localizacaoGeografica(localizacaoGeografica)
-                .numeroFuncionarios(numeroFuncionarios)
-                .tipoEmpresa(tipoEmpresa)
-                .cliente(cliente)
+        DesempenhoFinanceiro desempenhoFinanceiro = DesempenhoFinanceiro.builder()
+                .receita( receita )
+                .lucro( lucro )
+                .crescimento( crecimento)
+                .empresa( empresas )
                 .build();
 
         ExampleMatcher matcher = ExampleMatcher.matchingAll()
                 .withIgnoreNullValues()
                 .withIgnoreCase();
 
-        Example<Empresas> example = Example.of( empresas, matcher );
+        Example<DesempenhoFinanceiro> example = Example.of( desempenhoFinanceiro, matcher );
 
         var encontrados = service.findAll( example );
         if (encontrados.isEmpty()) return ResponseEntity.notFound().build();
@@ -60,7 +61,7 @@ public class EmpresasResource implements ResourceDTO<EmpresasRequest, EmpresasRe
 
     @Override
     @GetMapping(value = "/{id}")
-    public ResponseEntity<EmpresasResponse> findById(@PathVariable Long id ) {
+    public ResponseEntity<DesempenhoFinanceiroResponse> findById(@PathVariable Long id) {
         var encontrado = service.findById( id );
 
         if (encontrado == null) return ResponseEntity.notFound().build();
@@ -72,7 +73,7 @@ public class EmpresasResource implements ResourceDTO<EmpresasRequest, EmpresasRe
     @Override
     @Transactional
     @PostMapping
-    public ResponseEntity<EmpresasResponse> save(@RequestBody @Valid EmpresasRequest r) {
+    public ResponseEntity<DesempenhoFinanceiroResponse> save(@RequestBody @Valid DesempenhoFinanceiroRequest r) {
         var entity = service.toEntity( r );
         var saved = service.save( entity );
         var resposta = service.toResponse( saved );

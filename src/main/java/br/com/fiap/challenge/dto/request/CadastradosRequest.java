@@ -5,7 +5,6 @@ import org.hibernate.validator.constraints.br.CNPJ;
 
 public record CadastradosRequest(
         @NotNull(message = "O cnpj é obrigatório")
-        @CNPJ
         String cnpj,
         @NotNull(message = "A senha é obrigatória")
         String senha,

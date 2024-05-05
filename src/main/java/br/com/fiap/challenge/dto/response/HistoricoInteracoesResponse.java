@@ -5,7 +5,7 @@ import lombok.Builder;
 @Builder
 public record HistoricoInteracoesResponse(
 
-        Long id_Interacao,
+        Long id,
         String propostaNegocio,
         String contratoAssinado,
         String feedbackServicosProdutos,

@@ -19,7 +19,7 @@ public class Empresas {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SQ_EMPRESAS")
     @SequenceGenerator(name = "SQ_EMPRESAS", sequenceName = "SQ_EMPRESAS", allocationSize = 1)
     @Column(name = "ID_Empresa")
-    private Long id_Empresa;
+    private Long id;
 
     @Column(name = "Nome")
     private String nome;
@@ -40,5 +40,5 @@ public class Empresas {
     private String tipoEmpresa;
 
     @Column(name = "Cliente")
-    private boolean cliente;
+    private Boolean cliente;
 }

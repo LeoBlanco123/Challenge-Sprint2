@@ -59,7 +59,7 @@ public class ComportamentoNegociosService implements ServiceDTO<ComportamentoNeg
         var empresa = empresasService.toResponse(e.getEmpresa());
 
         return ComportamentoNegociosResponse.builder()
-                .id_Comportamento(e.getId_Comportamento())
+                .id(e.getId())
                 .interacoesPlataforma(e.getInteracoesPlataforma())
                 .frequenciaUso(e.getFrequenciaUso())
                 .feedback(e.getFeedback())

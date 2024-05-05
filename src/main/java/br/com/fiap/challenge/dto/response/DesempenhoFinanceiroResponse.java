@@ -5,10 +5,10 @@ import lombok.Builder;
 @Builder
 public record DesempenhoFinanceiroResponse(
 
-        Long id_Desempenho,
-        double receita,
-        double lucro,
-        double crescimento,
+        Long id,
+        Double receita,
+        Double lucro,
+        Double crescimento,
         EmpresasResponse empresas
 ) {
 }

@@ -19,16 +19,16 @@ public class DesempenhoFinanceiro {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SQ_DESEMPENHO_FINANCEIRO")
     @SequenceGenerator(name = "SQ_DESEMPENHO_FINANCEIRO", sequenceName = "SQ_DESEMPENHO_FINANCEIRO", allocationSize = 1)
     @Column(name = "Id_Desempenho")
-    private Long id_Desempenho;
+    private Long id;
 
     @Column(name = "Receita")
-    private double receita;
+    private Double receita;
 
     @Column(name = "Lucro")
-    private double lucro;
+    private Double lucro;
 
     @Column(name = "Crescimento")
-    private double crescimento;
+    private Double crescimento;
 
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})

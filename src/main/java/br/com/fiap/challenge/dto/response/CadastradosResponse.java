@@ -5,6 +5,7 @@ import lombok.Builder;
 @Builder
 public record CadastradosResponse(
 
+        Long id,
         String cnpj,
         String nome
 ) {

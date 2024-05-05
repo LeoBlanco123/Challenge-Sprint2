@@ -19,16 +19,15 @@ public class TendenciasGastos {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SQ_TENDENCIAS_GASTOS")
     @SequenceGenerator(name = "SQ_TENDENCIAS_GASTOS", sequenceName = "SQ_TENDENCIAS_GASTOS", allocationSize = 1)
     @Column(name = "Id_TendenciaGasto")
-    private Long id_TendenciaGasto;
-
+    private Long id;
     @Column(name = "Ano")
-    private int ano;
+    private Long ano;
 
     @Column(name = "Gasto_Marketing")
-    private double gastoMarketing;
+    private Double gastoMarketing;
 
     @Column(name = "Gasto_Automacao")
-    private double gastoAutomacao;
+    private Double gastoAutomacao;
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
     @JoinColumn(

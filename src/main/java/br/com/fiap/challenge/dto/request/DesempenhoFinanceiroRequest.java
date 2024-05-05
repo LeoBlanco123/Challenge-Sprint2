@@ -6,11 +6,11 @@ import jakarta.validation.constraints.NotNull;
 public record DesempenhoFinanceiroRequest(
 
         @NotNull(message = "A receita é obrigatória")
-        double receita,
+        Double receita,
         @NotNull(message = "O lucro é obrigatório")
-        double lucro,
+        Double lucro,
         @NotNull(message = "O crescimento é obrigatório")
-        double crescimento,
+        Double crescimento,
         @Valid
         @NotNull(message = "O id é obrigatório")
         AbstractRequest empresa

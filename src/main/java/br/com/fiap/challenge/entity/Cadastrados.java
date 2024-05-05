@@ -1,9 +1,6 @@
 package br.com.fiap.challenge.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,6 +16,11 @@ import lombok.NoArgsConstructor;
 public class Cadastrados {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SQ_CADASTRADOS")
+    @SequenceGenerator(name = "SQ_CADASTRADOS", sequenceName = "SQ_CADASTRADOS", allocationSize = 1)
+    @Column(name = "Id_cadastrados")
+    private Long id;
+
     @Column(name = "Cnpj")
     private String cnpj;
 

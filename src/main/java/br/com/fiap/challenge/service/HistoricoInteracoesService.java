@@ -59,7 +59,7 @@ public class HistoricoInteracoesService implements ServiceDTO<HistoricoInteracoe
         var empresa = empresasService.toResponse(e.getEmpresa());
 
         return HistoricoInteracoesResponse.builder()
-                .id_Interacao(e.getId_Interacao())
+                .id(e.getId())
                 .propostaNegocio(e.getPropostaNegocio())
                 .contratoAssinado(e.getContratoAssinado())
                 .feedbackServicosProdutos(e.getFeedbackServicosProdutos())

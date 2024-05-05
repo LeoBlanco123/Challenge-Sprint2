@@ -18,8 +18,8 @@ public class CadastroFuncionario {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SQ_CAD_FUN")
     @SequenceGenerator(name = "SQ_CAD_FUN", sequenceName = "SQ_CAD_FUN", allocationSize = 1)
-    @Column(name = "Cod_Funcionario")
-    private Long codFuncionario;
+    @Column(name = "id_Funcionario")
+    private Long id;
 
     @Column(name = "Senha_Funcionario")
     private String senhaFuncionario;
@@ -29,9 +29,9 @@ public class CadastroFuncionario {
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
     @JoinColumn(
-            name = "Cnpj",
-            referencedColumnName = "Cnpj",
-            foreignKey = @ForeignKey(name = "FK_CNPJ_CAD")
+            name = "CADASTRADOS",
+            referencedColumnName = "Id_cadastrados",
+            foreignKey = @ForeignKey(name = "FK_ID_CAD")
     )
     private Cadastrados cadastrado;
 }

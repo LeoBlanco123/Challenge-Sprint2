@@ -5,7 +5,7 @@ import lombok.Builder;
 @Builder
 public record CadastroFuncionarioResponse(
 
-        Long codFuncionario,
+        Long id,
         String cargoFuncionario,
         CadastradosResponse cadastrado
 

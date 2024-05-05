@@ -5,9 +5,9 @@ import lombok.Builder;
 @Builder
 public record ComportamentoNegociosResponse(
 
-        Long id_Comportamento,
-        int interacoesPlataforma,
-        int frequenciaUso,
+        Long id,
+        Long interacoesPlataforma,
+        Long frequenciaUso,
         String feedback,
         String usoRecursosEspecificos,
         EmpresasResponse empresa
