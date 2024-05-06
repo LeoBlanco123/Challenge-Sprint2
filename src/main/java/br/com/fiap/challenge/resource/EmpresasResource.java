@@ -2,7 +2,6 @@ package br.com.fiap.challenge.resource;
 
 import br.com.fiap.challenge.dto.request.EmpresasRequest;
 import br.com.fiap.challenge.dto.response.EmpresasResponse;
-import br.com.fiap.challenge.entity.Cadastrados;
 import br.com.fiap.challenge.entity.Empresas;
 import br.com.fiap.challenge.service.EmpresasService;
 import jakarta.transaction.Transactional;
