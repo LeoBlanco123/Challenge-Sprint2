@@ -17,7 +17,7 @@
 # Como rodar a aplicação
 
 SRC > MAIN > JAVA > BR.COM.FIAP.CHALLENGE > ChallengePlusoftApplication  
-Rodar a aplicação atraves do 'ChallengerApplication'.
+Rodar a aplicação atraves do 'ChallengePlusoftApplication'.
 
 # Diagrama de Classes
 ![diagrama-classe.png](documentacao%2Fdiagramas%2Fdiagrama-classe.png)
