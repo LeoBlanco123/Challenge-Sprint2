@@ -17,6 +17,6 @@ public record EmpresasRequest(
         @NotNull(message = "O tipo da emopresa é obrigatório")
         String tipoEmpresa,
         @NotNull(message = "O campo cliente é obrigatório (true or false)")
-        Boolean cliente
+        boolean cliente
 ) {
 }

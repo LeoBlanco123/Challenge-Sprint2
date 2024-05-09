@@ -24,16 +24,16 @@ public class EmpresasResource implements ResourceDTO<EmpresasRequest, EmpresasRe
 
     @GetMapping
     public ResponseEntity<Collection<EmpresasResponse>> findAll(
-            @RequestParam(name = "Nome", required = false) String nome,
-            @RequestParam(name = "Tamanho", required = false) String tamaho,
-            @RequestParam(name = "Setor", required = false) String setor,
-            @RequestParam(name = "Localizacao_Geografica", required = false) String localizacaoGeografica,
-            @RequestParam(name = "Numero_Funcionarios", required = false) Long numeroFuncionarios,
-            @RequestParam(name = "Tipo_Empresa", required = false) String tipoEmpresa,
-            @RequestParam(name = "Cliente", required = false) Boolean cliente
+            @RequestParam(name = "nome", required = false) String nome,
+            @RequestParam(name = "tamanho", required = false) String tamaho,
+            @RequestParam(name = "setor", required = false) String setor,
+            @RequestParam(name = "localizacaoGeografica", required = false) String localizacaoGeografica,
+            @RequestParam(name = "numeroFuncionarios", required = false) Long numeroFuncionarios,
+            @RequestParam(name = "tipoEmpresa", required = false) String tipoEmpresa,
+            @RequestParam(name = "cliente", required = false) boolean cliente
     ){
 
-        var empresas = Empresas.builder()
+        Empresas empresas = Empresas.builder()
                 .nome(nome)
                 .tamanho(tamaho)
                 .setor(setor)

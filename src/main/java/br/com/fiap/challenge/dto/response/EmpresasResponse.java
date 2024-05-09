@@ -12,6 +12,6 @@ public record EmpresasResponse(
         String localizacaoGeografica,
         Long numeroFuncionarios,
         String tipoEmpresa,
-        Boolean cliente
+        boolean cliente
 ) {
 }

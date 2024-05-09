@@ -40,5 +40,5 @@ public class Empresas {
     private String tipoEmpresa;
 
     @Column(name = "Cliente")
-    private Boolean cliente;
+    private boolean cliente;
 }
