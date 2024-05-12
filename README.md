@@ -46,9 +46,9 @@ https://www.youtube.com/watch?v=V7Ntv5wPsF0
        3. "logalhost/desempenho/{id}" - **GET**
 
     4. **HistoricoInteracoesResource** com as seguintes ROTAS e VERBOS:
-       1. "localhost/interacoes" - **GET by Example**,
-       2. "localhost/interacoes" - **POST**
-       3. "logalhost/interacoes/{id}" - **GET**
+       1. "localhost/historico" - **GET by Example**,
+       2. "localhost/historico" - **POST**
+       3. "logalhost/historico/{id}" - **GET**
 
     5. **TendenciasGastosResource** com as seguintes ROTAS e VERBOS:
        1. "localhost/tendencias" - **GET by Example**,
