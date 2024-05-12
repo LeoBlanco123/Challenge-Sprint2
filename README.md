@@ -28,8 +28,6 @@ https://www.youtube.com/watch?v=V7Ntv5wPsF0
 
 # End Points    
 
-### OBS FAZER NO POSTMAN O NUMERO 1 E 2 PRIMERO, PARA NAO DAR PROBLEMA EM RELAÇÃO NO BANCO DE DADOS
-
     1. **EmpresasResource** com as seguintes ROTAS e VERBOS:
        1. "localhost/empresas" - **GET by Example**,
        2. "localhost/empresas" - **POST**
