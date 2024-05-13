@@ -4,12 +4,12 @@
 # Sumário
 [Integrantes](#integrantes-)  
 [Como rodar a aplicação](#como-rodar-a-aplicação)  
-[Diagrama de Classes de Entidade](#diagrama-de-classes-de-entidade)
-[Diagrama de Classes de Request (DTO's)](#diagrama-de-classes-de-request-dtos)
-[Diagrama de Classes de Response (DTO's)](#diagrama-de-classes-de-response-dtos)
-[Diagrama de Arquitetura](#diagrama-de-arquitetura)
-[Link do Video](#link-do-video)  
-[End Points  ](#end-points-)  
+[Diagrama de Classes de Entidade](#diagrama-de-classes-de-entidade)  
+[Diagrama de Classes de Request (DTO's)](#diagrama-de-classes-de-request-dtos)  
+[Diagrama de Classes de Response (DTO's)](#diagrama-de-classes-de-response-dtos)  
+[Diagrama de Arquitetura](#diagrama-de-arquitetura)  
+[Link do Video](#link-do-video)    
+[End Points  ](#end-points-)   
 
 # Integrantes  
 
