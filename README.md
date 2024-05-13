@@ -2,16 +2,16 @@
 ![logo.png](documentacao%2Ffotos%2Flogo.png)
 
 # Sumário
-[Integrantes](#integrantes-)  
+[Integrantes](#integrantes)  
 [Como rodar a aplicação](#como-rodar-a-aplicação)  
 [Diagrama de Classes de Entidade](#diagrama-de-classes-de-entidade)  
 [Diagrama de Classes de Request (DTO's)](#diagrama-de-classes-de-request-dtos)  
 [Diagrama de Classes de Response (DTO's)](#diagrama-de-classes-de-response-dtos)  
 [Diagrama de Arquitetura](#diagrama-de-arquitetura)  
 [Link do Video](#link-do-video)    
-[End Points  ](#end-points-)   
+[End Points](#end-points)   
 
-# Integrantes  
+# Integrantes
 
 ### Leonardo Blanco – rm99119
 Ficou responsavel por Java
@@ -48,7 +48,7 @@ Rodar a aplicação atraves do 'ChallengePlusoftApplication'.
 # Link do Video
 https://www.youtube.com/watch?v=V7Ntv5wPsF0
 
-# End Points    
+# End Points
 
     1. **EmpresasResource** com as seguintes ROTAS e VERBOS:
        1. "localhost/empresas" - **GET by Example**,
