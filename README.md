@@ -4,6 +4,7 @@
 # Sumário
 [Integrantes](#integrantes)  
 [Como rodar a aplicação](#como-rodar-a-aplicação)  
+[Diagrama de Classes](#diagrama-de-classes)  
 [Diagrama de Classes de Entidade](#diagrama-de-classes-de-entidade)  
 [Diagrama de Classes de Request (DTO's)](#diagrama-de-classes-de-request-dtos)  
 [Diagrama de Classes de Response (DTO's)](#diagrama-de-classes-de-response-dtos)  
@@ -33,16 +34,18 @@ Ficou responsavel por C#, Devops
 SRC > MAIN > JAVA > BR.COM.FIAP.CHALLENGE > ChallengePlusoftApplication  
 Rodar a aplicação atraves do 'ChallengePlusoftApplication'.
 
-# Diagrama de Classes de Entidade
+# Diagrama de Classes
+
+## Diagrama de Classes de Entidade
 ![entity.png](documentacao%2Fdiagramas-classes%2Fentity.png)
 
-# Diagrama de Classes de Request (DTO's)
+## Diagrama de Classes de Request (DTO's)
 ![request.png](documentacao%2Fdiagramas-classes%2Frequest.png)
 
-# Diagrama de Classes de Response (DTO's)
+## Diagrama de Classes de Response (DTO's)
 ![response.png](documentacao%2Fdiagramas-classes%2Fresponse.png)
 
-# Diagrama de Arquitetura
+## Diagrama de Arquitetura
 ![arquitetura.png](documentacao%2Fdiagramas-classes%2Farquitetura.png)
 
 # Link do Video
