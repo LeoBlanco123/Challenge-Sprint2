@@ -2,16 +2,13 @@
 ![logo.png](documentacao%2Ffotos%2Flogo.png)
 
 # Sumário
-[Integrantes](#integrantes-)  
+[Integrantes](#integrantes)  
 [Como rodar a aplicação](#como-rodar-a-aplicação)  
-[Diagrama de Classes de Entidade](#diagrama-de-classes-de-entidade)
-[Diagrama de Classes de Request (DTO's)](#diagrama-de-classes-de-request-dtos)
-[Diagrama de Classes de Response (DTO's)](#diagrama-de-classes-de-response-dtos)
-[Diagrama de Arquitetura](#diagrama-de-arquitetura)
-[Link do Video](#link-do-video)  
-[End Points  ](#end-points-)  
+[Diagramas](#diagramas)  
+[Link do Video](#link-do-video)    
+[End Points](#end-points)   
 
-# Integrantes  
+# Integrantes
 
 ### Leonardo Blanco – rm99119
 Ficou responsavel por Java
@@ -33,22 +30,24 @@ Ficou responsavel por C#, Devops
 SRC > MAIN > JAVA > BR.COM.FIAP.CHALLENGE > ChallengePlusoftApplication  
 Rodar a aplicação atraves do 'ChallengePlusoftApplication'.
 
-# Diagrama de Classes de Entidade
+# Diagramas
+
+## Diagrama de Classes de Entidade
 ![entity.png](documentacao%2Fdiagramas-classes%2Fentity.png)
 
-# Diagrama de Classes de Request (DTO's)
+## Diagrama de Classes de Request (DTO's)
 ![request.png](documentacao%2Fdiagramas-classes%2Frequest.png)
 
-# Diagrama de Classes de Response (DTO's)
+## Diagrama de Classes de Response (DTO's)
 ![response.png](documentacao%2Fdiagramas-classes%2Fresponse.png)
 
-# Diagrama de Arquitetura
+## Diagrama de Arquitetura
 ![arquitetura.png](documentacao%2Fdiagramas-classes%2Farquitetura.png)
 
 # Link do Video
 https://www.youtube.com/watch?v=V7Ntv5wPsF0
 
-# End Points    
+# End Points
 
     1. **EmpresasResource** com as seguintes ROTAS e VERBOS:
        1. "localhost/empresas" - **GET by Example**,
