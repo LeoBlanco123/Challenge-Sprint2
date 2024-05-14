@@ -30,7 +30,7 @@ public class EmpresasResource implements ResourceDTO<EmpresasRequest, EmpresasRe
             @RequestParam(name = "localizacaoGeografica", required = false) String localizacaoGeografica,
             @RequestParam(name = "numeroFuncionarios", required = false) Long numeroFuncionarios,
             @RequestParam(name = "tipoEmpresa", required = false) String tipoEmpresa,
-            @RequestParam(name = "cliente", required = false) boolean cliente
+            @RequestParam(name = "cliente", required = false) Boolean cliente
     ){
 
         Empresas empresas = Empresas.builder()
@@ -72,7 +72,8 @@ public class EmpresasResource implements ResourceDTO<EmpresasRequest, EmpresasRe
     @Transactional
     @PostMapping
     public ResponseEntity<EmpresasResponse> save(@RequestBody @Valid EmpresasRequest r) {
-        var entity = service.toEntity( r );
+        var entity = service.toEntity(r);
+        System.out.println("Cliente: " + entity.getCliente()); // Log para depuração
         var saved = service.save( entity );
         var resposta = service.toResponse( saved );
 
