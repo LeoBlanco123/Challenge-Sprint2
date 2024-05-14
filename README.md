@@ -35,11 +35,7 @@ Rodar a aplicação atraves do 'ChallengePlusoftApplication'.
 ## Diagrama de Classes de Entidade
 ![entity.png](documentacao%2Fdiagramas-classes%2Fentity.png)
 
-## Diagrama de Classes de Request (DTO's)
-![request.png](documentacao%2Fdiagramas-classes%2Frequest.png)
 
-## Diagrama de Classes de Response (DTO's)
-![response.png](documentacao%2Fdiagramas-classes%2Fresponse.png)
 
 ## Diagrama de Arquitetura
 ![arquitetura.png](documentacao%2Fdiagramas-classes%2Farquitetura.png)
