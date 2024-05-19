@@ -52,27 +52,27 @@ https://www.youtube.com/watch?v=V7Ntv5wPsF0
     1. **EmpresasResource** com as seguintes ROTAS e VERBOS:
        1. "localhost/empresas" - **GET by Example**,
        2. "localhost/empresas" - **POST**
-       3. "logalhost/empresas/{id}" - **GET**
+       3. "localhost/empresas/{id}" - **GET**
     
     2. **ComportamentoNegociosResource** com as seguintes ROTAS e VERBOS:
        1. "localhost/comportamento" - **GET by Example**,
        2. "localhost/comportamento" - **POST**
-       3. "logalhost/comportamento/{id}" - **GET**
+       3. "localhost/comportamento/{id}" - **GET**
        
     3. **DesempenhoFinanceiroResource** com as seguintes ROTAS e VERBOS:
        1. "localhost/desempenho" - **GET by Example**,
        2. "localhost/desempenho" - **POST**
-       3. "logalhost/desempenho/{id}" - **GET**
+       3. "localhost/desempenho/{id}" - **GET**
 
     4. **HistoricoInteracoesResource** com as seguintes ROTAS e VERBOS:
        1. "localhost/historico" - **GET by Example**,
        2. "localhost/historico" - **POST**
-       3. "logalhost/historico/{id}" - **GET**
+       3. "localhost/historico/{id}" - **GET**
 
     5. **TendenciasGastosResource** com as seguintes ROTAS e VERBOS:
        1. "localhost/tendencias" - **GET by Example**,
        2. "localhost/tendencias" - **POST**
-       3. "logalhost/tendencias/{id}" - **GET**
+       3. "localhost/tendencias/{id}" - **GET**
     
     
 
