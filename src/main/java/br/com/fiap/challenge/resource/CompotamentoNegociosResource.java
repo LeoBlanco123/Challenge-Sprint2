@@ -18,6 +18,7 @@ import java.util.Collection;
 import java.util.Objects;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping(value = "/comportamento")
 public class CompotamentoNegociosResource implements ResourceDTO<ComportamentoNegociosRequest, ComportamentoNegociosResponse>{
 

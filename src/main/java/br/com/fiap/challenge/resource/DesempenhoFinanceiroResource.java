@@ -18,6 +18,7 @@ import java.util.Collection;
 import java.util.Objects;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping(value = "/desempenho")
 public class DesempenhoFinanceiroResource implements ResourceDTO<DesempenhoFinanceiroRequest, DesempenhoFinanceiroResponse>{
 

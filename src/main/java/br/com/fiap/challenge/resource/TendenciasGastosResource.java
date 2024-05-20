@@ -18,6 +18,7 @@ import java.util.Collection;
 import java.util.Objects;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping(value = "/tendencias")
 public class TendenciasGastosResource implements ResourceDTO<TendenciasGastosRequest, TendenciasGastosResponse>{
 

@@ -18,6 +18,7 @@ import java.util.Collection;
 import java.util.Objects;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping(value = "/historico")
 public class HistoricoInteracoesResource implements ResourceDTO<HistoricoInteracoesRequest, HistoricoInteracoesResponse>{
 

@@ -16,6 +16,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import java.util.Collection;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping(value = "/empresas")
 public class EmpresasResource implements ResourceDTO<EmpresasRequest, EmpresasResponse>{
 
@@ -73,7 +74,6 @@ public class EmpresasResource implements ResourceDTO<EmpresasRequest, EmpresasRe
     @PostMapping
     public ResponseEntity<EmpresasResponse> save(@RequestBody @Valid EmpresasRequest r) {
         var entity = service.toEntity(r);
-        System.out.println("Cliente: " + entity.getCliente()); // Log para depuração
         var saved = service.save( entity );
         var resposta = service.toResponse( saved );
 
