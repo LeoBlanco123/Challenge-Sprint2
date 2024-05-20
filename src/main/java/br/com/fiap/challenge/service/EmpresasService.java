@@ -60,6 +60,7 @@ public class EmpresasService implements ServiceDTO<Empresas, EmpresasRequest, Em
                 .localizacaoGeografica(e.getLocalizacaoGeografica())
                 .numeroFuncionarios(e.getNumeroFuncionarios())
                 .tipoEmpresa(e.getTipoEmpresa())
+                .cliente(e.getCliente())
                 .build();
     }
 }
